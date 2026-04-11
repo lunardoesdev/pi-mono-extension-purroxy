@@ -36,8 +36,8 @@ pi -e /path/to/pi-mono-extension-purroxy
 Or symlink it into your extensions directory:
 
 ```bash
-mkdir -p ~/.pi/extensions
-ln -s $(pwd) ~/.pi/extensions/purroxy
+mkdir -p ~/.pi/agent/extensions
+ln -s $(pwd) ~/.pi/agent/extensions/purroxy
 ```
 
 ## Environment
@@ -69,16 +69,14 @@ export VERTEX_API_KEY="your-vertex-key"
 export XAI_BASE_URL="https://your-proxy.example/xai/v1"
 export XAI_API_KEY="your-xai-key"
 
-# GLM
-export GLM_BASE_URL="https://your-proxy.example/glm/v4"
-export GLM_API_KEY="your-glm-key"
+# ZAI/GLM
+export ZAI_BASE_URL="https://your-proxy.example/glm/v4"
+export ZAI_API_KEY="your-glm-key"
 
 # DeepSeek
 export DEEPSEEK_BASE_URL="https://your-proxy.example/deepseek/v1"
 export DEEPSEEK_API_KEY="your-deepseek-key"
 
-# Optional: custom DeepSeek model list
-export DEEPSEEK_MODELS="deepseek-chat,deepseek-reasoner"
 ```
 
 Accepted variable names by provider:
